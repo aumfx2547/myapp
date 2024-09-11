@@ -1,5 +1,5 @@
 {% extends "_base.html" %}
- 
+{% load static %}
 {% block title %} Home {% endblock %}
 
 {% block content %}
@@ -92,6 +92,15 @@
 
 <div id='currentDateTime' class='mt-4 text-center text-4xl font-kanit'>
     <script>UpdateTime();</script>
+</div>
+
+<div class='mt-4'>
+    <button class='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold
+    hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded font-kanit'>แมวยืน</button>
+    <img src='{% static 'images/Idle.png' %}' width='200px'>
+    <button class='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold
+    hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded font-kanit'>แมวสไลด์</button>
+    
 </div>
 
 {% endblock content %}
