@@ -9,7 +9,9 @@ module.exports = {
 			fontFamily: {
 				angsana: ["Angsana New"],
 				th_saraban: ["TH SarabunPSK"],
-				taviraj: ["Taviraj"]
+				taviraj: ["Taviraj"],
+				athiti: ["Athiti"],
+				kanit: ["Kanit"],
 			},
 		},
 	},

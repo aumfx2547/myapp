@@ -77,4 +77,21 @@
     <div class="p-4 text-white bg-red-500">6</div>
 </div>
 
+
+<div class='mt-4 text-center'>
+    <h1 id='head' class='text-2xl text-center py-4 font-kanit'> สวัสดีชาวโลก </h1>
+    <button class='bg-amber-500 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded mt-2 font-athiti' onclick="changeColor()">เปลี่ยนสี</button> 
+</div>
+
+<script>
+    const text = document.getElementById("head")
+    function changeColor() {
+        text.style.color='red'
+    }
+</script>
+
+<div id='currentDateTime' class='mt-4 text-center text-4xl font-kanit'>
+    <script>UpdateTime();</script>
+</div>
+
 {% endblock content %}
