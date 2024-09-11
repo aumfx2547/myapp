@@ -106,7 +106,7 @@
     
 </div>
 
-<div class='mt-4'>
+<div class='mt-4 text-center'>
     <div>
         <button class='bg-amber-500 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded mt-2 font-athiti'
         onclick="DisplayTable('visible');">แสดงตาราง</button> 
@@ -114,23 +114,31 @@
         onclick="DisplayTable('hidden');">ซ่อนตาราง</button> 
     </div>
     <table id="myTable" class="table-auto border-2 border-slate-900">
-        <caption>ตารางสินค้า</caption>
+        <caption class='border-2 border-slate-900'>ตารางสินค้า</caption>
         <tr>
-            <th>รายการที่ 1</th>
-            <th>รายการที่ 2</th>
-            <th>รายการที่ 3</th>
+            <th class='border-2 border-slate-900'>รายการที่ 1</th>
+            <th class='border-2 border-slate-900'>รายการที่ 2</th>
+            <th class='border-2 border-slate-900'>รายการที่ 3</th>
         </tr>
         <tr>
-            <td>324</td>
-            <td>657</td>
-            <td>317</td>
+            <td class='border-2 border-slate-900'>324</td>
+            <td class='border-2 border-slate-900'>657</td>
+            <td class='border-2 border-slate-900'>317</td>
         </tr>
         <tr>
-            <td>999</td>
-            <td>777</td>
-            <td>888</td>
+            <td class='border-2 border-slate-900'>999</td>
+            <td class='border-2 border-slate-900'>777</td>
+            <td class='border-2 border-slate-900'>888</td>
         </tr>
     </table>
 </div>
+<div class='mt-4 text-center'>
+    number #1<input type='number' id='num1' class='border-2 border-slate-900'><br />
+    number #2<input type='number' id='num2' class='border-2 border-slate-900'><br />
+    number #3<input type='number' id='num3' class='border-2 border-slate-900'><br />
+    <button class='bg-amber-500 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded mt-2 font-athiti'
+    onclick='calAverage()'>Submit</button>
+</div>
+<div class='mt-2 text-2xl text-center' id='result'></div>
 
 {% endblock content %}
